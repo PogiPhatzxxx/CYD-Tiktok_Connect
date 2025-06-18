@@ -8,6 +8,7 @@
 - [Installing Node.js](#installing-nodejs)
 - [Replace and Backing Up Arduino Libraries](#replace-and-backing-up-arduino-libraries)
 - [Running the Server](#running-the-server)
+- [Upload Guide](#upload-guide)
 - [Credits](#credits)
 
 ## Changing WiFi Credentials
@@ -75,6 +76,17 @@ To back up the required libraries for this project:
 ```
 node server.js
 ```
+## Upload Guide
+Configure Arduino IDE Settings:
+Connect the CYD via USB.
+Select Tools > Board > ESP32 Dev Module and the correct Port.
+
+Partition Scheme: Rainmker
+
+Compile and Upload:
+Click Verify to compile. Fix any errors.
+Click Upload. Enter Download Mode if prompted (hold BOOT, press RESET, release both).
+Wait for “Done uploading.”
 
 ## Credits
 This project uses the [TikTok-Live-Connector](https://github.com/zerodytrash/TikTok-Live-Connector) library for connecting to TikTok live streams.
